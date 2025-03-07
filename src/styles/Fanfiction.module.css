@@ -1,0 +1,225 @@
+/* 🌟 General Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark mode */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* 🏆 Title */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff414d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInDown 0.8s ease-in-out;
+  }
+  
+  /* 🎭 Form Styling */
+  .submitForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    background: #252525;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.7s ease-in-out;
+  }
+  
+  .inputField,
+  .textareaField {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .inputField:focus,
+  .textareaField:focus {
+    background: #444;
+    box-shadow: 0 0 5px rgba(255, 65, 77, 0.7);
+  }
+  
+  /* 📝 Textarea */
+  .textareaField {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  /* 🚀 Submit Button */
+  .submitButton {
+    background: #ff414d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background: #d63031;
+    transform: scale(1.05);
+  }
+  
+  /* 📖 Story Container */
+  .storyContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #252525;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .storyHeading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* 🏷️ No Stories Message */
+  .noStories {
+    text-align: center;
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  /* 📜 Individual Story Card */
+  .storyCard {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  .storyCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(255, 65, 77, 0.5);
+  }
+  
+  .storyCard h3 {
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .storyCard p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 5px;
+  }
+  
+  /* 💬 Comment Section */
+  .commentSection {
+    margin-top: 15px;
+    padding: 10px;
+    background: #222;
+    border-radius: 5px;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .commentSection h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #ffcc00;
+  }
+  
+  .comment {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 3px solid #ff414d;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  /* 💡 Comment Input */
+  .commentSection .inputField {
+    margin-top: 5px;
+  }
+  
+  /* 🎬 Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.7rem;
+    }
+  
+    .inputField,
+    .textareaField {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .submitButton {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .storyCard {
+      padding: 12px;
+    }
+  
+    .storyCard h3 {
+      font-size: 1.2rem;
+    }
+  
+    .commentSection {
+      padding: 8px;
+    }
+  }
+  
+  
